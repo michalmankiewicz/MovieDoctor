@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Doctor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/queries.css" />
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script type="module" defer src="src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="">
+        <div class="logo"><span>Movie</span> Doctor</div>
+        <form class="search-bar">
+          <input
+            class="input-search"
+            type="search"
+            placeholder="Search over 1,000,000 movies..."
+          />
+          <button></button>
+        </form>
+
+        <nav>
+          <div class="nav-list">
+            <button class="nav-item btn-favourites">
+              <i class="ph-heart-fill"></i>
+              <span>My favourites</span>
+            </button>
+            <button class="nav-item btn-rates">
+              <i class="ph-star-half-fill"></i>
+              <span>My rates</span>
+            </button>
+          </div>
+        </nav>
+        <div class="mobile-buttons">
+          <button class="btn-mobile-search">
+            <i class="ph-magnifying-glass"></i>
+          </button>
+          <button class="btn-mobile-options">
+            <i class="ph-list"></i>
+          </button>
+          <button class="btn-mobile-exit">
+            <i class="ph-x-bold"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="filters">
+        <div class="filter category" data-category="now_playing">
+          Now Playing
+        </div>
+        <div class="filter category chosen-category" data-category="popular">
+          Popular
+        </div>
+        <div class="filter category" data-category="top_rated">Top rated</div>
+        <div class="filter category" data-category="upcoming">Upcoming</div>
+      </div>
+      <div class="genres">
+        <btn class="genre category" data-category="action">Action</btn>
+        <btn class="genre category" data-category="comedy">Comedy</btn>
+        <btn class="genre category" data-category="drama">Drama</btn>
+        <btn class="genre category" data-category="horror">Horror</btn>
+        <btn class="genre category" data-category="mystery">Mystery</btn>
+        <btn class="genre category" data-category="romance">Romance</btn>
+        <btn class="genre category" data-category="thriller">Thriller</btn>
+      </div>
+
+      <div class="film-list-container">
+        <div class="film-list"></div>
+      </div>
+
+      <footer>
+        <div class="footer-icons">
+          <a class="icon" href="#"> <i class="ph-facebook-logo"></i></a>
+          <a class="icon" href="#"><i class="ph-instagram-logo"></i></a>
+          <a class="icon" href="#"><i class="ph-linkedin-logo"></i></a>
+          <a class="icon" href="#"><i class="ph-twitter-logo"></i></a>
+        </div>
+        <div class="footer-text">
+          &copy; All Rights Reserved by <span>Michał Mańkiewicz</span>
+        </div>
+      </footer>
+
+      <div class="modal hidden">
+        <!-- <img src="./src/img/poster.jpg" alt="" />
+        <div class="modal-details">
+          <div class="modal-details-title">Jurassic World: Dominion</div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
+            assumenda quia. Beatae repellendus delectus vel totam possimus nihil
+            modi debitis! Recusandae repellendus architecto ab quasi ipsam nulla
+            aspernatur, delectus quae. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Nemo, assumenda quia. Beatae repellendus delectus
+            vel totam possimus nihil modi debitis! Recusandae repellendus
+            architecto ab quasi ipsam nulla aspernatur, delectus quae.
+          </p>
+        </div>
+        <div class="modal-rating">
+          <h3>Rate this movie:</h3>
+          <div class="rates">
+            <div class="rate">1</div>
+            <div class="rate">2</div>
+            <div class="rate">3</div>
+            <div class="rate">4</div>
+            <div class="rate">5</div>
+            <div class="rate">6</div>
+            <div class="rate">7</div>
+            <div class="rate">8</div>
+            <div class="rate">9</div>
+            <div class="rate">10</div>
+          </div>
+        </div>
+        <i class="ph-x-bold btn-exit"></i> -->
+      </div>
+
+      <div class="overlay hidden"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+/**************************/
+/* BELOW 1360px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 85rem) {
+  /* HEADER */
+
+  .logo {
+    font-size: 3rem;
+    padding: 1.6rem 1.2rem;
+  }
+  .nav-item {
+    padding: 2rem 1.2rem;
+    font-size: 1.8rem;
+  }
+  .nav-item i {
+    font-size: 3rem;
+  }
+  .input-search {
+    font-size: 1.8rem;
+  }
+
+  /* CONTAINER */
+  .film-list-container {
+    max-width: 120rem;
+  }
+
+  /* MODAL */
+  .modal {
+    width: 55%;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape tablets) */
+/* HEADER and NAVIGATION switch to tablet and mobile view */
+/**************************/
+
+@media (max-width: 75rem) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+
+  header {
+    /* position: fixed; */
+    width: 100%;
+    height: 8vh;
+    z-index: 101;
+    margin-bottom: 1.6rem;
+    /* padding: 0 4.8rem; */
+    /* position: relative; */
+  }
+
+  .logo {
+    padding-left: 1.8rem;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  header nav {
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    z-index: 100;
+
+    margin: 0;
+    overflow: hidden;
+
+    background-color: inherit;
+    opacity: 0;
+
+    transform: translateX(100%);
+    transition: all 0.3s ease-in;
+  }
+
+  .options-open nav {
+    transform: translateX(0);
+    opacity: 0.95;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  .nav-item {
+    width: 100%;
+    justify-content: start;
+  }
+
+  .mobile-buttons {
+    margin-right: 1.2rem;
+  }
+
+  .mobile-buttons button {
+    font-size: 3.2rem;
+    padding: 0 0.8rem;
+  }
+
+  .search-open .logo,
+  .search-open nav,
+  .search-open .btn-mobile-search,
+  .search-open .btn-mobile-options {
+    display: none;
+  }
+
+  .search-open .btn-mobile-exit {
+    display: block;
+  }
+
+  .search-open {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-open .search-bar {
+    display: block;
+    width: 80%;
+  }
+
+  .mobile-buttons {
+    display: flex;
+  }
+
+  /* FILTERS/GENRES */
+
+  .filters,
+  .genres {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1.8rem;
+    margin: 1rem 2rem;
+  }
+
+  .filter,
+  .genre {
+    font-size: 2rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 24px;
+  }
+
+  /* FILM CARD */
+
+  .film-card:hover img {
+    transform: none;
+    opacity: 1;
+  }
+
+  .overview {
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 984px (Tablets) */
+/**************************/
+
+@media (max-width: 61.5rem) {
+  .modal {
+    width: 60%;
+  }
+
+  .film-card {
+    width: 26rem;
+    height: 39rem;
+  }
+}
+
+/**************************/
+/* BELOW 784px (Smaller Tablets) */
+/**************************/
+
+@media (max-width: 49rem) {
+  html {
+    font-size: 50%;
+  }
+
+  .search-bar {
+    width: 38%;
+  }
+
+  /* FILM CARD */
+
+  .film-card {
+    width: 23rem;
+    height: 34.5rem;
+  }
+
+  .title h2 {
+    font-size: 1.6rem;
+  }
+
+  /* MODAL */
+
+  .modal {
+    width: 70%;
+  }
+
+  .modal-details {
+    padding-left: 1.2rem;
+  }
+
+  .rates {
+    gap: 1.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 624px (Mobile) */
+/**************************/
+
+@media (max-width: 39rem) {
+  .container {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  .logo {
+    font-size: 2.8rem;
+  }
+
+  .message {
+    font-size: 2.4rem;
+    gap: 0.8rem;
+  }
+  .message i {
+    font: 4rem;
+  }
+
+  .film-card {
+    width: 20rem;
+    height: 30rem;
+  }
+
+  /* MODAL */
+
+  .modal {
+    width: auto;
+    min-width: 35rem;
+  }
+
+  .modal-details,
+  .modal img {
+    display: none;
+  }
+
+  .rates {
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+
+  .rate {
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+}
